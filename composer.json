@@ -19,7 +19,6 @@
 			"homepage": "http://www.geodan.nl"
 		}
 	],
-	"minimum-stability": "dev",
 	"support": {
 		"issues": "https://github.com/pillum/yii2-dual-list-view/issues?state=open",
 		"source": "https://github.com/pillum/yii2-dual-list-view"
