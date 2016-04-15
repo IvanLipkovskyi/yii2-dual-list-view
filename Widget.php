@@ -19,6 +19,7 @@ class Widget extends InputWidget
     public $data;
     public $data_id;
     public $data_value;
+    public $data_value_extended;
 
     public function init()
     {
@@ -55,11 +56,11 @@ class Widget extends InputWidget
         foreach ($data as $key => $value) {
 
             if (!in_array($value[$this->data_id], $selected)) {
-                $ret .= '<option value="' . $value[$this->data_id] . '">' . $value[$this->data_value] . '</option>' . "\n";
+                $ret .= '<option value="' . $value[$this->data_id] . '">' . $value[$this->data_value].' ('. $value[$this->data_value_extended].')'. '</option>' . "\n";
         } else {
                 $cnt++;
                 $ret_sel .= '$("#dlb-'.$this->attribute.' .selected").
-                append("<option value=' . $value[$this->data_id] . '>' . $value[$this->data_value] . '</option>");';
+                append("<option value=' . $value[$this->data_id] . '>' . $value[$this->data_value].' ('. $value[$this->data_value_extended].')'. '</option>");';
             }
 
         }
