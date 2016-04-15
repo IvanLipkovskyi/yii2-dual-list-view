@@ -1,5 +1,5 @@
 {
-	"name": "pillum/yii2-dual-list-box",
+	"name": "pillum/yii2-dualListBox",
 	"description": "Dual list box Widget for Yii 2",
 	"type": "yii2-extension",
 	"keywords": ["yii2", "yii 2", "dual-list-box", "duallistbox", "dual listview", "widget"],
@@ -21,8 +21,8 @@
 	],
 	"minimum-stability": "dev",
 	"support": {
-		"issues": "https://github.com/pillum/yii2-dual-list-box/issues?state=open",
-		"source": "https://github.com/pillum/yii2-dual-list-box"
+		"issues": "https://github.com/pillum/yii2-dualListBox/issues?state=open",
+		"source": "https://github.com/pillum/yii2-dualListBox"
 	},
 	"require": {
 		"yiisoft/yii2": "~2.0"
