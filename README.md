@@ -43,7 +43,7 @@ echo pillum\duallistbox\Widget::widget([
     'data' => $region,
     'data_id'=> 'id',
     'data_value'=> 'name',
-    'data_value_extended'=> 'name',
+    'data_value_extended'=> 'name_extended',
     'lngOptions' => [
         'warning_info' => 'Вы уверены, что хотите выбрать такое количество элементов?
                            Возможно Ваш браузер может перестанет отвечать на запросы..',
@@ -61,6 +61,7 @@ title - view name for attribute
 data - model (Region::find());
 data_id - name attribute for id
 data_value - name attribute for value
+data_value_extended - extended name attribute for value
 
 ### Controller VIEW ###
 
