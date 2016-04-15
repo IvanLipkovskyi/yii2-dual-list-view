@@ -1,6 +1,6 @@
 <?php
 
-namespace maksyutin\duallistbox;
+namespace pillum\duallistview;
 
 use yii\web\AssetBundle;
 
