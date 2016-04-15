@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist maksyutin/yii2-dual-list-box "dev-master"
+php composer.phar require --prefer-dist pillum/yii2-dual-list-box "dev-master"
 ```
 
 or add
 
 ```
-"maksyutin/yii2-dual-list-box": "dev-master"
+"pillum/yii2-dual-list-box": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -36,13 +36,14 @@ Once the extension is installed, simply use it in your code:
 ### View ###
 ```php
 
-echo maksyutin\duallistbox\Widget::widget([
+echo pillum\duallistbox\Widget::widget([
     'model' => $model,
     'attribute' => 'list_regions',
     'title' => 'города',
     'data' => $region,
     'data_id'=> 'id',
     'data_value'=> 'name',
+    'data_value_extended'=> 'name',
     'lngOptions' => [
         'warning_info' => 'Вы уверены, что хотите выбрать такое количество элементов?
                            Возможно Ваш браузер может перестанет отвечать на запросы..',
