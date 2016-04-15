@@ -36,7 +36,7 @@ Once the extension is installed, simply use it in your code:
 ### View ###
 ```php
 
-echo pillum\duallistbox\Widget::widget([
+echo pillum\duallistview\Widget::widget([
     'model' => $model,
     'attribute' => 'list_regions',
     'title' => 'города',
