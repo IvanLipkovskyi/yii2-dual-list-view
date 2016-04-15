@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist pillum/yii2-dual-list-box "dev-master"
+php composer.phar require --prefer-dist pillum/yii2-dualListBox "dev-master"
 ```
 
 or add
 
 ```
-"pillum/yii2-dual-list-box": "dev-master"
+"pillum/yii2-dualListBox": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
