@@ -27,6 +27,7 @@ class Widget extends InputWidget
 
         $this->data_id = isset($this->data_id) ? $this->data_id : 'id';
         $this->data_value = isset($this->data_value) ? $this->data_value : 'name';
+        $this->data_value_extended = isset($this->data_value_extended) ? $this->data_value_extended : false;
 
         $this->nametitle = isset($this->nametitle) ? $this->nametitle : '';
         $this->registerAssets();
@@ -54,13 +55,14 @@ class Widget extends InputWidget
         $ret = '<select style="display: none;" multiple = "multiple">';
         $cnt = 0;
         foreach ($data as $key => $value) {
+            $data_value_extended = $this->data_value_extended && $value[$this->data_value_extended] ? ' ('. $value[$this->data_value_extended].')' : '';
 
             if (!in_array($value[$this->data_id], $selected)) {
-                $ret .= '<option value="' . $value[$this->data_id] . '">' . $value[$this->data_value].' ('. $value[$this->data_value_extended].')'. '</option>' . "\n";
+                $ret .= '<option value="' . $value[$this->data_id] . '">' . $value[$this->data_value]. $data_value_extended . '</option>' . "\n";
         } else {
                 $cnt++;
                 $ret_sel .= '$("#dlb-'.$this->attribute.' .selected").
-                append("<option value=' . $value[$this->data_id] . '>' . $value[$this->data_value].' ('. $value[$this->data_value_extended].')'. '</option>");';
+                append("<option value=' . $value[$this->data_id] . '>' . $value[$this->data_value].$data_value_extended. '</option>");';
             }
 
         }
